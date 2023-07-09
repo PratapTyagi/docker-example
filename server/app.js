@@ -27,6 +27,9 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/articles", articles);
 app.use("/api/users", users);
+app.get("/", (_, res) => {
+  res.send("App is running 🚀");
+});
 
 app.listen(PORT, () => {
   console.log("Server started on port", PORT);
