@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node app.js",
     "client": "cd client && yarn start",
-    "server": "nodemon app.js"
+    "server": "nodemon -L app.js"
   },
   "author": "Pratap Tyagi",
   "license": "ISC",
